@@ -10,7 +10,6 @@ import { PieChart } from 'react-minimal-pie-chart';
 
 function HomePage({afterMainPage}){
   const [text, setText] = useState("");
-  console.log(text);
 
   function send() {
     afterMainPage(2);
@@ -37,7 +36,7 @@ function HomePage({afterMainPage}){
               }}
             />
           </Stack>
-            <Button onClick={send} variant="contained" className="button">Search</Button>
+            <Button onClick={send} variant="contained" style = {{backgroundColor: "#383B51"}}className="button">Search</Button>
           </section>
         <div className="footer">
           <h4>HCDE 438: Web Technologies</h4>

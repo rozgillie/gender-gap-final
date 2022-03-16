@@ -4,11 +4,18 @@ import checkmark from './checkmark.png';
 import red_x from './red_x.png';
 import legend from './legend.png';
 import { PieChart } from 'react-minimal-pie-chart';
+import Button from '@mui/material/Button';
+
+
 
 //https://www.forworkingfamilies.org/resources/policy-tools-living-wage
 //https://www.launchstrategylegal.com/2020/09/09/workplace-harassment-policies-what-you-need-to-know/
 
-function Company() {
+function Company({afterMainPage}) {
+  function goBack() {
+    afterMainPage(1);
+  }
+
   let company = document.getElementById("company-search").value;
   let s = JSON.stringify(data)
   let d = JSON.parse(s);
@@ -41,6 +48,7 @@ function Company() {
   let p_total = 100 - pay_gap;
 
   return(
+    <div className="Company">
       <div className="Info">
       <header className="header">
         
@@ -49,6 +57,7 @@ function Company() {
         <span className="title">Gender Gap & Company Ethics Analysis</span> 
       </header>
       <body>
+      <Button onClick={goBack} variant="contained" style = {{backgroundColor: "#383B51", marginTop:"25px", marginLeft:"200px"}}className="button">Go Back</Button>
         <section className="company-info">
           <h1>{company}</h1>
           <h3>Category: {d[company]["group"]}</h3>
@@ -136,6 +145,7 @@ function Company() {
         <section>
   
         </section>
+    </div>
     </div>
     )
 }
@@ -277,11 +287,4 @@ const data =
     "pay_gap":96
   }};
  
-/*
-  <a href="https://www.qries.com/">
-  <img alt="logo" src="/gender_gap_logo.png"
-  width="2.5rem" height="3.3rem"/>
-</a>
-</div>
-*/
 
