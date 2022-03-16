@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+/*Header searchbar*/
+.header > .css-1jruifh-MuiStack-root{
+  background: #F8F8FB;
+  justify-content: flex-end;
+  color: #F8F8FB;
+}
+
+.html{
+  margin: 0px 200px 0px 200px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app{
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* info viz CSS*/
+
+.company-info, .yes_no{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 0px 200px 0px 200px;
+}
+
+.company-info > h1{
+  color:#383B51;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.company-info >h2{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.company-info > h3{
+  margin:0;
+  color: #383B51;
+  align-self: flex-start;
+}
+
+.company-info > h4{
+  align-self: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.company-info > h5{
+  margin-top: 0px;
+}
+
+.company-info > p{
+  align-self: flex-start;
+  margin-top: 0px;
+}
+
+.footer{
+  background: #383B51;
+  position:absolute;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   text-align:center;
+}
+
+.company-info{
+  color:#383B51;
+}
+
+/* Yes No Styling */
+
+.yes_no{
+  color:#383B51;
+  margin-bottom: 40px;
+}
+
+.yes_no > div{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
+.yes_no > h3{
+  margin-bottom: 0px;
+}
+
+.yes_no > div > h4{
+  margin-bottom: 0px;
+
+}
+
+.yes_no > p{
+  margin-top: 0px;
+}
+
+img{
+  height: 40px;
+  width: 40px;
+}
+
+/* pie chart*/
+.pie-charts{
+  display: flex;
+  margin: 20px 200px 100px 0px; 
+  justify-content: space-between;
+  
+}
+
+.chart{
+  width:200px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.chart-section{
+  margin-left: 200px;
+  color:#383B51;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.chart-section >h2{
+  margin-bottom: 45px;
+}
+
+.pay-chart{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 220px;
+  margin-bottom: 50px;
+  gap:30px;
+  color:#383B51;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pay-chart > h4 {
+  font-size: 30px;
+}
+
+.pay-chart >img{
+  width: 127px;
+  height:98px;
+}
+
+.title > h2{
+  margin-left: 200px;
+  margin-bottom: 40px;
+  color: #383B51;
+}
+
+.title > h4{
+  color: #383B51;
+  margin-left: 200px;
+}

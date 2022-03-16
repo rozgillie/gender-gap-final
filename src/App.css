@@ -1,0 +1,66 @@
+/*imports google font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.html{
+  background: #F8F8FB;  
+}
+
+
+.App {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+  height: 6rem;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  background: #383B51;
+  position: relative;
+  display:flex;
+}
+
+.footer{
+  background: #383B51;
+  position:absolute;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   color: #F8F8FB;
+}
+
+.title{
+  color: white;
+}
+
+.logo {
+  background: url("gender_gap_logo.png");
+  height: 3.3rem;
+  width: 2.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.h1 {
+  font-size: large;
+  color: #383B51;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
