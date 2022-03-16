@@ -30,6 +30,8 @@ function HomePage({afterMainPage}){
               id="company-search"
               options={companies.map((option) => option.name)}
               renderInput={(params) => <TextField {...params} id = "textInput" label="Search for a Company..."/>}
+              autoComplete
+              freeSolo
               inputValue={text}
               onChange={(event, text) => {
                 setText(text);
